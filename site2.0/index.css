@@ -1,0 +1,374 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Arial';
+	}
+    body { overflow-x: hidden; }
+
+.logo{
+    position: absolute;
+    z-index: 1;
+    margin-left: 8%;
+    
+}
+.menu{
+	width:100%;
+	height:70px;
+	background-color:rgb(255, 245, 249);   
+    position: absolute;
+    z-index: 0;/*sobreposição*/
+    
+
+	}
+	
+.menu>ul{
+	list-style:none;	
+	position:relative;
+	margin-left: 40%;
+	}
+.menu ul li{
+		width:150px;
+		float:left;
+        
+       
+	}
+
+.menu a{
+	padding:15px;
+	display: block;
+	text-decoration: none;
+	background-color:rgb(255, 245, 249);  
+	white-space: nowrap;
+    text-align:right;
+    
+    margin-top: 10px;
+    color: rgb(190, 3, 91);
+    
+	}
+.menu ul ul{
+	list-style:none;
+	position:absolute;
+	visibility:hidden;
+	
+	}
+.menu ul li:hover ul{
+	visibility:visible;
+	}
+	
+.menu a:hover{
+	background-color:rgb(228, 83, 143);
+
+	}
+
+.menu ul ul li{
+	float:none;
+	border: 4px solid rgb(255, 215, 215);
+	}
+
+#bt_menu{
+	display: none;
+	}
+label[for='bt_menu']{/*menu tres risquinhos*/
+	padding:5px;
+	background-color:rgb(255, 255, 255); 
+	color:rgb(190, 3, 91);
+	font-family:'Arial';
+	text-align:center;
+	font-size:30px;
+	cursor:pointer;
+	display:none;
+	width:50px;
+	height:50px;
+	}	
+label[for='bt_menu']:hover{
+	background-color:rgb(228, 83, 143);
+
+	}
+
+#conteiner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 200px;
+    height: 100%;
+    
+    
+}
+
+#conteiner figure div{ /*botao adotar*/
+    background-color:rgb(255, 245, 249);  
+    width: 146px;
+    height: 75px;
+    position: relative;
+    left: 80px;
+    border-radius: 20px;
+   
+
+}
+
+#conteiner figure div a{
+    position: relative;
+    top: 25%;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 20px;
+    transition: background .4s;
+    color: rgb(190, 3, 91);    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#conteiner figure div a:hover{ /*quando passar o mouse em cima do elemento ele mudará de cor*/
+    background-color:rgb(228, 83, 143);
+
+
+}
+
+
+figure #joana{ /*caracteristicas da imagem*/
+    background-color: rgb(255, 253, 253);
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    border-radius: 20px;
+    
+}
+.gato{ /*texto da imagem*/
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    
+}
+
+/*paginas*/
+
+#conteiner div #pag {
+    list-style-type: none;
+    display: inline-flex;
+    padding-top: 50%;
+    
+}
+
+#conteiner div #pag  li a{
+    text-decoration: none;
+    color: rgb(190, 3, 91); 
+    background-color:rgb(255, 245, 249);  
+    transition: background .4s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 30px;
+    border-radius:20px;
+    
+}
+
+
+
+#conteiner div #pag  li a:hover{ /*quando passar o mouse em cima do elemento ele mudará de cor*/
+    background-color:rgb(228, 83, 143);
+
+}
+footer{
+    background-color:rgb(255, 245, 249); 
+    width: 100vw;
+    height: 550px;
+    text-align: center;
+    border: 4px solid rgb(255, 215, 215);
+    position: absolute;
+    top: 1700px;
+
+}
+#logo{
+    position: relative;
+    top: 50px;      
+   
+}
+footer .bi-envelope{
+    position: relative;
+    top: 105px;   
+    right: 145px;  
+    
+    
+}
+footer .bi-whatsapp{
+    position: relative;
+    top: 105px;   
+    right: 250px;  
+    
+    
+}
+
+
+footer div p{
+    position: relative;
+    top: 70px;      
+    font-size: 20px;
+    
+}
+
+footer p{
+    position: relative;
+    top: 80px;      
+    font-size: 19px;
+    
+}
+
+footer p a{
+    color: black;
+    
+}
+
+@media (max-width: 340px){
+    body{
+        visibility: hidden;
+    }
+}
+@media (max-width: 1000px) {
+
+footer{
+    visibility: hidden;
+}
+#conteiner{
+    position: absolute;
+    z-index: 0;
+    top: 90px;
+    max-height: 100%;
+    
+}
+figure #joana{
+    width: 350px;
+}
+.logo{
+    margin-top: -55px;
+    right: 5%;
+    width: 50px;
+
+
+}
+
+.menu{
+    background-color: white;
+	margin-left:-100%;
+	transition:all .4s;
+	}
+label[for='bt_menu']{
+	display:block;
+    
+	}
+.menu>ul{
+	margin-left:0;
+    
+	}
+.menu{
+	margin-top:5px;
+	}
+.menu ul li{
+	width:100%;
+	float:none;
+    
+    
+	}
+.menu  a{
+    text-align:center;
+    background-color:rgb(255, 245, 249);  
+}
+.menu ul ul{
+	position:static;
+	overflow:hidden;
+	max-height:0;
+	transition:all .4s;
+	}
+.menu ul li:hover ul{
+	height:auto;
+	max-height:200px;
+	transition:all .4s;
+	}
+#bt_menu:checked ~ .menu{
+	margin-left:0;
+    position: absolute;
+    z-index: 1;
+	}
+}
+    
+
+
+@media (min-width: 1600px) {
+    footer{
+    
+
+        visibility: hidden;
+    }
+    #conteiner div #pag  li a{
+        font-size: 100px;    
+        
+    }
+    
+    #conteiner{
+    top: 200px;
+    height: 100%;
+    
+}
+figure #joana{
+    width: 800px;
+    
+}
+.gato{
+    font-size: 50px;
+}
+#conteiner figure div a{
+    font-size: 50px;
+
+}
+#conteiner figure div{
+    left: 40%;
+}
+    .logo{
+        margin-top: -105px;
+        right: 1%;
+        width: 250px;
+    
+    
+    }
+    label[for='bt_menu']{/*menu tres risquinhos*/
+	
+    padding-top: 50px;
+    width: 200px;
+	
+	}	
+    .menu{
+        background-color: white;
+        width: 1500px;
+        margin-left:-100%;
+        transition:all .4s;
+        padding-left: 100px;
+        }
+    label[for='bt_menu']{
+        display:block;
+        }
+    .menu>ul{
+        margin-left:0;
+        }
+    .menu{
+        margin-top:5px;
+        }
+    .menu ul li{
+        width:100%;
+        float:none;
+        
+        }
+    .menu  a{
+        text-align:center;
+        background-color:rgb(255, 245, 249);  
+    }
+    .menu ul ul{
+        position:static;
+        overflow:hidden;
+        max-height:0;
+        transition:all .4s;
+        }
+    .menu ul li:hover ul{
+        height:auto;
+        max-height:200px;
+        transition:all .4s;
+        }
+    #bt_menu:checked ~ .menu{
+        margin-left:0;
+        }
+    }
